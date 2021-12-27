@@ -1,0 +1,86 @@
+* {
+  font-family: 'Sora', sans-serif;
+}
+.title {
+  text-align: center;
+  margin: 20px;
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+  color: black;
+  animation: fadeIn linear 0.5s;
+  /* Para Chrome y safari */
+  -webkit-animation: fadeIn linear 0.5s;
+  /* Para Firefox */
+  -moz-animation: fadeIn linear 0.5s;
+  /* Para Opera */
+  -o-animation: fadeIn linear 0.5s;
+  /* Para I.E */
+  -ms-animation: fadeIn linear 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.column {
+  float: left;
+}
+
+.left,
+.right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
